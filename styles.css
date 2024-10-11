@@ -1,0 +1,112 @@
+/* Styles de base pour toute la page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-size: 100%;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Conteneur global */
+.wrapper {
+    display: flex; 
+    justify-content: center; /* Centre les conteneurs horizontalement */
+    width: 100%; /* Prendre toute la largeur */
+    max-width: 1200px; /* Largeur maximale */
+    margin: 20px;
+    flex-wrap: wrap; /* Permet le passage à la ligne sur petits écrans */
+}
+
+/* Conteneurs pour chaque section */
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fond blanc avec 80% d'opacité */
+    border-radius: 8px; /* Coins arrondis */
+    padding: 20px; /* Espace à l'intérieur du conteneur */
+    margin: 10px auto; /* Marge automatique pour centrer */
+    max-width: 600px; /* Largeur maximum du conteneur */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce pour un effet de profondeur */
+}
+
+/* Styles pour les titres */
+h1, h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styles des zones de texte */
+textarea {
+    width: 100%;
+    padding: 12px; /* Espace intérieur */
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    resize: none; /* Désactive le redimensionnement */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+}
+
+/* Zone de texte enchanté et normal */
+p.enchant, #normal-text {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap; /* Conserve les sauts de ligne */
+    word-break: break-all; /* Force le retour à la ligne pour les mots longs */
+    overflow-y: auto; /* Barre de défilement si nécessaire */
+    max-height: 300px; /* Limite la hauteur */
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+    text-align: center;
+}
+
+
+/* Boutons Copier */
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Adaptation pour petits écrans */
+@media (max-width: 768px) {
+    .container {
+        width: 100%; /* Prend toute la largeur sur petits écrans */
+        margin: 10px 0; /* Ajuste la marge */
+    }
+
+    h1, h2 {
+        font-size: 20px;
+    }
+
+    textarea, p.enchant, #normal-text {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
