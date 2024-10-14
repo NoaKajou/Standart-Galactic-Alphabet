@@ -94,7 +94,7 @@ button:hover {
 /* Adaptation pour petits écrans */
 @media (max-width: 768px) {
     .container {
-        width: 100%; /* Prend toute la largeur sur petits écrans */
+        width: 80%; /* Prend toute la largeur sur petits écrans */
         margin: 10px 0; /* Ajuste la marge */
     }
 
